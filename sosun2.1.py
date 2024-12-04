@@ -136,20 +136,20 @@ from turtledemo.sorting_animate import instructions1
 # a = ''.join(a)
 # print(a)
 
-coordinates = [5,3]
-instructions = ['left','left','left','up']
-
-def change_coordinates(cords, instr):
-    for instruction in instr:
-        if 'left' == instruction:
-            coordinates[0] -= -1
-        elif 'down' == instruction:
-            coordinates[1] -= -1
-        elif 'up' == instruction:
-            coordinates[1] -= 1
-        elif 'down' == instruction:
-            coordinates[0] -= 1
-print()
+# coordinates = [5,3]
+# instructions = ['left','left','left','up']
+#
+# def change_coordinates(cords, instr):
+#     for instruction in instr:
+#         if 'left' == instruction:
+#             coordinates[0] -= -1
+#         elif 'down' == instruction:
+#             coordinates[1] -= -1
+#         elif 'up' == instruction:
+#             coordinates[1] -= 1
+#         elif 'down' == instruction:
+#             coordinates[0] -= 1
+# print()
 
 
 
