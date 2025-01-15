@@ -151,6 +151,37 @@ from turtledemo.sorting_animate import instructions1
 #             coordinates[0] -= 1
 # print()
 
+# a = [4, 1, 2, 3, 5]
+# # print(a[2])
+# for i in range(len(a)):  # 0 - len(a)
+#     print(a[i])
 
 
+#
+# txt = "mama,papa,cat"
+#
+# x = txt.split("")
+#
+# print(x)
 
+# words = input()
+# words = words.split()
+#
+# for word in words:
+#     # print(word, '-', word.count('a'))
+#     counter = 0
+#     counter2 = 0
+#     for symbol in word:
+#         if symbol == 'a' or symbol == 'm':
+#             counter += 1
+#
+#
+# # for symbol in word:
+# #         if symbol == 'm':
+# #             counter2 += 1
+#     print(word, counter)
+
+
+with open("wasd") as file:
+    file = file.readlines()
+    print(file)
