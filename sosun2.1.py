@@ -105,7 +105,10 @@
 #     print(myscore)
 #     action=input('tvoye deystviye:')
 '# if myscore or kazinichscore'
+from os.path import split
 from turtledemo.sorting_animate import instructions1
+
+from pyexpat.errors import XML_ERROR_UNCLOSED_CDATA_SECTION
 
 # a = input()
 # i = 1
@@ -182,6 +185,21 @@ from turtledemo.sorting_animate import instructions1
 #     print(word, counter)
 
 
-with open("wasd") as file:
+with open("scores") as file:
     file = file.readlines()
     print(file)
+    lines = [line.split() for line in file]
+    print(lines)
+    for i in range(len(lines)):
+        lines[i][2] = int(lines[i][2])
+    # print(lines)
+a = sorted(lines, key=lambda x:x[-1])
+b = sorted(a, key=lambda x:x[0])
+c = sorted(b, key=lambda x:x[1])
+d = sorted(c, key=lambda x:x[2])
+# print(d)
+#
+# for i in range(len(lines)):              # daldvniaqnhsefvqfrvqorgfqrg
+#     lines[i][1]
+# e = sorted(d, key=lambda x:x[1])
+# print(e)
